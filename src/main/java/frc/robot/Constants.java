@@ -4,6 +4,14 @@ import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.util.Units;
 
 public class Constants {
+    public static final boolean isReplay = false;
+
+    public static class BuildConstants {
+        public static final String projectName = "Forte-V3";
+        public static final String gitBranch = "AdvantageKit";
+        public static final String projectUrl = "https://github.com/Turbojax07/Forte-V3";
+    }
+
     public static class BeamConstants {
         // Sensor IDs
         public static final int shooterID = 0;

@@ -28,7 +28,7 @@ public class RobotContainer {
     // Creating the controllers
     CommandXboxController joystick = new CommandXboxController(0);
 
-    public RobotContainer() {
+    public RobotContainer(boolean isReal) {
         configureBindings();
     }
 

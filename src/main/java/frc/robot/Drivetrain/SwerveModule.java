@@ -80,6 +80,7 @@ public class SwerveModule extends SubsystemBase {
         while (turnPID.setI(DriveConstants.turnI) != REVLibError.kOk) {}
         while (turnPID.setD(DriveConstants.turnD) != REVLibError.kOk) {}
         while (turnPID.setFF(DriveConstants.turnFF) != REVLibError.kOk) {}
+        
         // Initializing the cancoder
         cancoder = new AnalogEncoder(cancoderID);
         cancoder.setPositionOffset(offset);
@@ -123,6 +124,7 @@ public class SwerveModule extends SubsystemBase {
     public Rotation2d getAngle() {
         // Getting radians
         double radians = turnEncoder.getPosition();
+        
 
         // Converting radians to Rotation2d
         return new Rotation2d(radians);
